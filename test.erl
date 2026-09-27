@@ -41,8 +41,6 @@ go(Wrk) ->
 sleep(Wrk, Sleep) ->
     Wrk ! {send, {sleep, Sleep}}.
 
-go(Wrk) ->
-    Wrk ! {send, stop}.
 
 
 			  
